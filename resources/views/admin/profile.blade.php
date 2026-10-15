@@ -1,0 +1,3 @@
+@extends('layouts.admin')
+@section('title','Profil Admin')
+@section('portal')<x-page-heading eyebrow="PENGATURAN AKUN" title="Profil admin" description="Perbarui informasi akun admin AutoCare."/><div class="form-card narrow-card"><form method="POST" action="{{ route('admin.profile.update') }}">@csrf @method('PUT')<div class="field"><label>Nama</label><input name="name" value="{{ old('name',$user->name) }}" required></div><div class="field"><label>Email</label><input value="{{ $user->email }}" disabled><small class="field-hint">Email akun admin tidak dapat diubah dari halaman ini.</small></div><button class="button button-primary">Simpan profil <span>↗</span></button></form></div>@endsection

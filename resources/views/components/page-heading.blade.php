@@ -1,0 +1,1 @@
+<div class="page-heading"><div><div class="eyebrow">{{ $eyebrow ?? 'AUTOCARE' }}</div><h1>{{ $title }}</h1>@isset($description)<p>{{ $description }}</p>@endisset</div>@isset($action)<div>{!! $action !!}</div>@endisset</div>

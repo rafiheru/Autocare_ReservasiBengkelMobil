@@ -1,0 +1,1 @@
+<div class="empty-state"><span class="empty-icon">{{ $icon ?? '⌁' }}</span><h3>{{ $title }}</h3><p>{{ $description }}</p>@isset($action)<div class="empty-action">{!! $action !!}</div>@else{{ $slot }}@endisset</div>
